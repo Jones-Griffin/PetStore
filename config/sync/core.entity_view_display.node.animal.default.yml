@@ -1,0 +1,65 @@
+uuid: cca24568-5eab-488a-aa9c-de71b8d68be5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.animal.field_about
+    - field.field.node.animal.field_animal_type
+    - field.field.node.animal.field_care_instructions
+    - field.field.node.animal.field_ideal_for
+    - field.field.node.animal.field_main_image
+    - image.style.animal_image
+    - node.type.animal
+  module:
+    - media
+    - text
+    - user
+id: node.animal.default
+targetEntityType: node
+bundle: animal
+mode: default
+content:
+  field_about:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_animal_type:
+    weight: 2
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_care_instructions:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_ideal_for:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_main_image:
+    type: media_thumbnail
+    weight: 1
+    label: hidden
+    settings:
+      image_style: animal_image
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
