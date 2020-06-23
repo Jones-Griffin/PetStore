@@ -1,0 +1,15 @@
+uuid: 8d9049ba-74e1-4319-93cb-9b36a63343b1
+langcode: en
+status: true
+dependencies: {  }
+name: animal_image
+label: 'Animal Image'
+effects:
+  c30b6536-2187-4b76-a859-32ab65003009:
+    uuid: c30b6536-2187-4b76-a859-32ab65003009
+    id: image_scale
+    weight: 2
+    data:
+      width: 400
+      height: 300
+      upscale: true
