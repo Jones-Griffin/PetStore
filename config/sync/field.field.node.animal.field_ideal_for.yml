@@ -1,0 +1,21 @@
+uuid: effb2426-bf2a-460c-ae3d-436abcb0bbaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ideal_for
+    - node.type.animal
+  module:
+    - text
+id: node.animal.field_ideal_for
+field_name: field_ideal_for
+entity_type: node
+bundle: animal
+label: 'Ideal for'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
