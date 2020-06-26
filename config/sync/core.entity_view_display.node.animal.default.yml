@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.animal.field_about
     - field.field.node.animal.field_animal_type
+    - field.field.node.animal.field_back
     - field.field.node.animal.field_care_instructions
     - field.field.node.animal.field_ideal_for
     - field.field.node.animal.field_main_image
     - image.style.animal_image
     - node.type.animal
   module:
+    - link
     - media
     - text
     - user
@@ -33,6 +35,18 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_back:
+    weight: 7
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   field_care_instructions:
     weight: 4

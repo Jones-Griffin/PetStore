@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - page_manager.page.home
+    - system.menu.footer
     - views.view.animals
     - views.view.pet_news
   module:
+    - system
     - views
 id: home-block_display-0
 label: Home
@@ -34,6 +36,18 @@ variant_settings:
       region: top
       weight: 0
       uuid: 5eb455aa-ca3a-4c4d-ae65-a4ea1b53a1de
+      context_mapping: {  }
+    b2c71d80-cc7d-40f6-91d2-fd21aad897a0:
+      id: 'system_menu_block:footer'
+      label: Footer
+      provider: system
+      label_display: visible
+      level: 1
+      depth: 0
+      expand_all_items: false
+      region: bottom
+      weight: 0
+      uuid: b2c71d80-cc7d-40f6-91d2-fd21aad897a0
       context_mapping: {  }
   id: block_display
   uuid: e8814ae1-5d43-4894-a594-a3b7e3c66266

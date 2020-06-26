@@ -1,0 +1,28 @@
+uuid: e9d7209b-aaac-4ab7-8e3c-8da59c3bf3bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_back
+    - node.type.animal
+  module:
+    - link
+id: node.animal.field_back
+field_name: field_back
+entity_type: node
+bundle: animal
+label: Back
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/animals'
+    title: 'more animals'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

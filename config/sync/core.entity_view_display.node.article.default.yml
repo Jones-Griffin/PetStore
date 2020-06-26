@@ -8,9 +8,11 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_articleimg
     - field.field.node.article.field_tags
+    - image.style.media_library
     - node.type.article
   module:
     - comment
+    - media
     - text
     - user
 _core:
@@ -37,12 +39,12 @@ content:
       pager_id: 0
     third_party_settings: {  }
   field_articleimg:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     weight: 0
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_style: media_library
+      image_link: ''
     third_party_settings: {  }
     region: content
   field_tags:

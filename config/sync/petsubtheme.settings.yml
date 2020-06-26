@@ -14,8 +14,8 @@ features:
   comment_user_verification: true
   favicon: true
 logo:
-  use_default: true
-  path: ''
+  use_default: false
+  path: 'public://picture14794145083027.png'
 favicon:
   use_default: true
   path: ''
