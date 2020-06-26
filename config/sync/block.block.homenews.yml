@@ -1,0 +1,41 @@
+uuid: aac9a035-284a-4ff5-85d1-086662063b2f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:364ee629-2cf9-4161-b927-97946918d83b'
+  module:
+    - block_content
+    - ctools
+    - node
+  theme:
+    - petsubtheme
+id: homenews
+theme: petsubtheme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:364ee629-2cf9-4161-b927-97946918d83b'
+settings:
+  id: 'block_content:364ee629-2cf9-4161-b927-97946918d83b'
+  label: 'Home News'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
