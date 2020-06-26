@@ -11,7 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('src/petsubtheme.js', 'js/petsubtheme.js').sass('src/petsubtheme.scss', 'style/css/petsubtheme.css');
+mix.js('src/petsubtheme.js', 'js/petsubtheme.js').sass('style/scss/petsubtheme.scss', 'style/css/petsubtheme.css');
 
 // Full API
 // mix.js(src, output);
