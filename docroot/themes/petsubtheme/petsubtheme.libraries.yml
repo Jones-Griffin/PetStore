@@ -1,0 +1,21 @@
+petsubtheme:
+  omega:
+    allow_clone_for_subtheme: true
+    allow_enable_disable: true
+    title: 'Default library for the petsubtheme theme'
+    description: 'Default Omega subtheme library description. Please provide a more meaningful description (and title) for this library by editing the petsubtheme.libraries.yml file.'
+    scss: 
+      style/css/petsubtheme.css: 'src/petsubtheme.scss'
+  version: VERSION
+  js:
+    js/petsubtheme.js: {}
+  css:
+    theme:
+      style/css/petsubtheme.css: {}
+    layout: 
+      #style/css/layout/some-layout-file.css: {}
+    component:
+      #style/css/components/some-component.css: {}
+  dependencies:
+    - core/jquery
+    
