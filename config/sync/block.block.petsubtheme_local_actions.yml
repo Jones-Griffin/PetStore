@@ -1,0 +1,20 @@
+uuid: 241022cc-f369-445a-a5bb-ee72accfccc8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - petsubtheme
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: petsubtheme_local_actions
+theme: petsubtheme
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

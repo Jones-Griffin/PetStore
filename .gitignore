@@ -18,8 +18,9 @@
 /docroot/sites/simpletest
 # Ignore custom theme's generated CSS files.
 /docroot/themes/custom/*/styles/css/
-
-/docroot/themes/petsubtheme/node_modules
+/docroot/themes/**/js/*.js
+/docroot/themes/**/style/css/*.css
+/docroot/themes/**/node_modules
 # Ignore Sass cache globally.
 .sass-cache/
 # Ignore libraries included with composer.

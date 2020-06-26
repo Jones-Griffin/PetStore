@@ -5,7 +5,7 @@ petsubtheme:
     title: 'Default library for the petsubtheme theme'
     description: 'Default Omega subtheme library description. Please provide a more meaningful description (and title) for this library by editing the petsubtheme.libraries.yml file.'
     scss: 
-      style/css/petsubtheme.css: 'style/scss/petsubtheme.scss'
+      style/css/petsubtheme.css: 'src/petsubtheme.scss'
   version: VERSION
   js:
     js/petsubtheme.js: {}

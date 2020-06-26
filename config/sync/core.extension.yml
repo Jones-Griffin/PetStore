@@ -55,7 +55,12 @@ theme:
 <<<<<<< HEAD
 =======
   omega: 0
+<<<<<<< HEAD
 >>>>>>> set up laravel
+=======
+  omega_simple_starterkit: 0
+  petsubtheme: 0
+>>>>>>> added animal content type
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

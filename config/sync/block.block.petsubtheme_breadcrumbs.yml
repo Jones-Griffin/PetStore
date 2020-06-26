@@ -1,0 +1,22 @@
+uuid: dc8dbbde-7bde-4106-8ee5-502e6913a5c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - petsubtheme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: petsubtheme_breadcrumbs
+theme: petsubtheme
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
