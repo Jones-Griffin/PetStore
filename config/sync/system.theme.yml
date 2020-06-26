@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-admin: seven
-=======
-admin: omega
->>>>>>> set up laravel
-default: bartik
-=======
+
 admin: seven
 default: petsubtheme
->>>>>>> added animal content type
 _core:
   default_config_hash: fOjer9hADYYnbCJVZMFZIIM1azTFWyg84ZkFDHfAbUg
