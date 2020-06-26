@@ -1,0 +1,47 @@
+uuid: 1a243842-b95e-4ce6-9279-f9c21f573018
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.home
+    - views.view.animals
+    - views.view.pet_news
+  module:
+    - views
+id: home-block_display-0
+label: Home
+variant: block_display
+variant_settings:
+  blocks:
+    9f48a33e-45dc-4f6b-a3c6-c9757e0cab4d:
+      id: 'views_block:animals-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: '3'
+      region: top
+      weight: 0
+      uuid: 9f48a33e-45dc-4f6b-a3c6-c9757e0cab4d
+      context_mapping: {  }
+    5eb455aa-ca3a-4c4d-ae65-a4ea1b53a1de:
+      id: 'views_block:pet_news-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: '3'
+      region: top
+      weight: 0
+      uuid: 5eb455aa-ca3a-4c4d-ae65-a4ea1b53a1de
+      context_mapping: {  }
+  id: block_display
+  uuid: e8814ae1-5d43-4894-a594-a3b7e3c66266
+  label: null
+  weight: 0
+  page_title: Home
+page: home
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
