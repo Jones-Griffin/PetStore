@@ -17,8 +17,12 @@
     "require": {
         "composer/installers": "^1.2",
         "drupal/admin_toolbar": "^2.3",
+<<<<<<< HEAD
         "drupal/core": "^8.9.0",
         "drupal/ds": "^3.7",
+=======
+        "drupal/core": "^8.9.1",
+>>>>>>> 54ab15d74921c0cf68511ae28bc874ebed7b9505
         "drupal/omega": "^5.0",
         "drupal/page_manager": "^4.0",
         "drush/drush": "^10.2"
