@@ -11,7 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('src/app.js', 'dist/').sass('style/scss/petsubtheme.scss', 'style/css');
+mix.js('src/petsubtheme.js', 'js/petsubtheme.js').sass('src/petsubtheme.scss', 'style/css/petsubtheme.css');
 
 // Full API
 // mix.js(src, output);
@@ -50,3 +50,5 @@ mix.js('src/app.js', 'dist/').sass('style/scss/petsubtheme.scss', 'style/css');
 //   terser: {}, // Terser-specific options. https://github.com/webpack-contrib/terser-webpack-plugin#options
 //   postCss: [] // Post-CSS options: https://github.com/postcss/postcss/blob/master/docs/plugins.md
 // });
+
+
