@@ -5,75 +5,87 @@ dependencies:
   config:
     - field.field.node.animal.field_about
     - field.field.node.animal.field_animal_type
-    - field.field.node.animal.field_back
     - field.field.node.animal.field_care_instructions
     - field.field.node.animal.field_ideal_for
     - field.field.node.animal.field_main_image
     - image.style.animal_image
     - node.type.animal
   module:
-    - link
+    - ds
     - media
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked_fluid
+      library: ds/ds_2col_stacked_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_main_image
+      right:
+        - field_animal_type
+        - field_about
+      footer:
+        - field_care_instructions
+        - field_ideal_for
 id: node.animal.default
 targetEntityType: node
 bundle: animal
 mode: default
 content:
   field_about:
-    weight: 3
-    label: above
+    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
+    region: right
   field_animal_type:
-    weight: 2
+    weight: 1
     label: inline
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_back:
-    weight: 7
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
+    region: right
   field_care_instructions:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: footer
+  field_ideal_for:
     weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-  field_ideal_for:
-    weight: 5
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
+    region: footer
   field_main_image:
     type: media_thumbnail
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       image_style: animal_image
       image_link: ''
     third_party_settings: {  }
-    region: content
-  links:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+    region: left
+hidden:
+  links: true

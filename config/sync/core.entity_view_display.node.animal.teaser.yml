@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.animal.field_about
     - field.field.node.animal.field_animal_type
-    - field.field.node.animal.field_back
     - field.field.node.animal.field_care_instructions
     - field.field.node.animal.field_ideal_for
     - field.field.node.animal.field_main_image
@@ -26,7 +25,6 @@ content:
 hidden:
   field_about: true
   field_animal_type: true
-  field_back: true
   field_care_instructions: true
   field_ideal_for: true
   field_main_image: true

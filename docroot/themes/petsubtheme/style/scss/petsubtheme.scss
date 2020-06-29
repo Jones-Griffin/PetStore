@@ -2,6 +2,10 @@
 //@import "omega-style-vars", "omega-default-style-vars";
 
 /* SAMPLE SCSS FILE CONTENTS */
-.page-title{
-    background-color: red;
+
+body .ds-2col .group-left {
+    width: 25%;
+}  
+body .ds-2col .group-right {
+    width: 75%;
 }

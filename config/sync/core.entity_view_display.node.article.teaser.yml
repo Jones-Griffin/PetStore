@@ -5,13 +5,46 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
-    - field.field.node.article.comment
     - field.field.node.article.field_articleimg
     - field.field.node.article.field_tags
+    - image.style.medium
     - node.type.article
   module:
+    - ds
+    - media
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_articleimg
+      right:
+        - node_title
+        - body
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
 _core:
   default_config_hash: 4NcL2hSQZBpJbYtNuh5jC6kyQTcAc1m5bQpTegEWEso
 id: node.article.teaser
@@ -21,24 +54,25 @@ mode: teaser
 content:
   body:
     type: text_summary_or_trimmed
-    weight: 0
-    region: content
+    weight: 2
+    region: right
     settings:
-      trim_length: 600
+      trim_length: 300
     third_party_settings: {  }
     label: hidden
-  field_tags:
-    type: entity_reference_label
-    weight: 10
-    region: content
+  field_articleimg:
+    type: media_thumbnail
+    weight: 0
+    region: left
+    label: hidden
     settings:
-      link: true
+      image_style: medium
+      image_link: content
     third_party_settings: {  }
-    label: above
   links:
-    weight: 100
-    region: content
+    weight: 3
+    region: right
+    settings: {  }
+    third_party_settings: {  }
 hidden:
-  comment: true
-  field_articleimg: true
   field_tags: true

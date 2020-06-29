@@ -1,0 +1,15 @@
+uuid: d2ba12ff-cef4-4be0-afca-d46985b3f8de
+langcode: en
+status: true
+dependencies: {  }
+name: aticleimg
+label: ArticleImg
+effects:
+  70f2cd45-2b01-47a4-8a7e-742b76df1e27:
+    uuid: 70f2cd45-2b01-47a4-8a7e-742b76df1e27
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 400
+      anchor: center-center

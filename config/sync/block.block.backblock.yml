@@ -1,0 +1,29 @@
+uuid: 79271837-e261-4e40-9a81-edff8dc9630e
+langcode: en
+status: true
+dependencies:
+  module:
+    - back_button
+    - node
+  theme:
+    - petsubtheme
+id: backblock
+theme: petsubtheme
+region: content
+weight: 0
+provider: null
+plugin: back_button
+settings:
+  id: back_button
+  label: 'back block'
+  provider: back_button
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      animal: animal
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
