@@ -1,0 +1,18 @@
+uuid: 77712731-b233-4f10-ae37-4e700b4dbeeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Contact page'
+type: contact_page
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

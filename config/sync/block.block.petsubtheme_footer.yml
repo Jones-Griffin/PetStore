@@ -1,6 +1,6 @@
 uuid: 9f5a8b26-93e2-44ee-84d7-6771c09dc35f
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
@@ -12,7 +12,7 @@ _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
 id: petsubtheme_footer
 theme: petsubtheme
-region: header
+region: footer
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

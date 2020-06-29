@@ -1,0 +1,32 @@
+uuid: ab83625c-1fad-403d-bde0-b5f7b1adec5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.contact_page.body
+    - field.field.node.contact_page.field_email_us
+    - node.type.contact_page
+  module:
+    - text
+    - user
+id: node.contact_page.teaser
+targetEntityType: node
+bundle: contact_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_email_us: true
