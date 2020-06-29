@@ -1,4 +1,4 @@
-uuid: 3ec49220-e5db-46cc-bf98-d799ab018e9b
+uuid: 88d4f11e-7141-46e8-bf7e-30cb416db91a
 langcode: en
 status: true
 dependencies:
@@ -6,12 +6,10 @@ dependencies:
     - system
   theme:
     - petsubtheme
-_core:
-  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
-id: petsubtheme_branding
+id: sitebranding
 theme: petsubtheme
-region: header
-weight: -5
+region: footer
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

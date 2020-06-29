@@ -1,0 +1,25 @@
+uuid: a7e3094c-7457-4c29-90fd-f71c08336af6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fbe2c3f8-91fa-40fe-b13b-fc979d92fc11'
+  module:
+    - block_content
+  theme:
+    - petsubtheme
+id: companyblurb
+theme: petsubtheme
+region: footer
+weight: -5
+provider: null
+plugin: 'block_content:fbe2c3f8-91fa-40fe-b13b-fc979d92fc11'
+settings:
+  id: 'block_content:fbe2c3f8-91fa-40fe-b13b-fc979d92fc11'
+  label: 'Company Blurb'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

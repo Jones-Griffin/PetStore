@@ -1,0 +1,29 @@
+uuid: 60a3720b-a5ab-417c-b06e-3e22e478ad66
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - petsubtheme
+id: mainnavigation
+theme: petsubtheme
+region: footer
+weight: -4
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: navigation_footer
+  provider: menu_block
+  label_display: '0'
+  follow: false
+  follow_parent: child
+  level: 1
+  depth: 0
+  expand: false
+  parent: 'main:'
+  suggestion: main
+visibility: {  }
