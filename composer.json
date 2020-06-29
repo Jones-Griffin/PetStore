@@ -21,6 +21,7 @@
         "drupal/ds": "^3.7",
         "drupal/omega": "^5.0",
         "drupal/page_manager": "^4.0",
+        "drupal/webform": "^5.18",
         "drush/drush": "^10.2"
     },
     "conflict": {
